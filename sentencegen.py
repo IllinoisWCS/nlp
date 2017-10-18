@@ -14,19 +14,19 @@ text = text.translate(translator)
 hp_words = [word.replace('"', '') for word in text.split()]
 total_words_in_book = 0
 for line in hp_words:
-	for word in line.split():
-		word = word.lower()
-		total_words_in_book += 1
-		if word not in all_words:
-			all_words[word] = 1
-		else:
-			all_words[word] += 1
+    for word in line.split():
+        word = word.lower()
+        total_words_in_book += 1
+        if word not in all_words:
+            all_words[word] = 1
+        else:
+            all_words[word] += 1
 ###
 # First find the probability of a given unigram in the corpus; P(w_i)
 ###
 unigram_probs = {}
 def unigram(w1):
-	# put code here
+    # put code here
 
 ###
 # Now find all bigrams in the corpus and order them from most popular
@@ -37,7 +37,7 @@ def unigram(w1):
 bigram_probs = {}
 
 def all_bigrams():
-	# put code here
+    # put code here
 
 ## How would you find the 20 most popular bigrams?
 
@@ -46,7 +46,7 @@ def all_bigrams():
 ###
 
 def get_bigram(w1, w2):
-	# put code here
+    # put code here
 print(get_bigram("sobbed", "Hagrid"))
 
 ###
@@ -60,8 +60,7 @@ start_word = unique_words[idx]
 
 # generate a sentence given a word and a length of the sentence
 # hint: define a function which chooses the next word in your sentence
-# 		based on weighted probabilites of bigrams
+#       based on weighted probabilites of bigrams
 def get_sentence(word, l=20):
-	# put code here
+    # put code here
 get_sentence(start_word, 15)
-
