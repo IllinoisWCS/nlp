@@ -22,10 +22,10 @@ for line in hp_words:
 		else:
 			all_words[word] += 1
 ###
-# First find all unigrams in the corpus P(w_i)
+# First find the probability of a given unigram in the corpus; P(w_i)
 ###
 unigram_probs = {}
-def all_unigrams(w1):
+def unigram(w1):
 	# put code here
 
 ###
@@ -38,7 +38,7 @@ bigram_probs = {}
 
 def all_bigrams():
 	# put code here
-	
+
 ## How would you find the 20 most popular bigrams?
 
 ###
@@ -64,13 +64,4 @@ start_word = unique_words[idx]
 def get_sentence(word, l=20):
 	# put code here
 get_sentence(start_word, 15)
-
-
-
-
-
-
-
-
-
 
